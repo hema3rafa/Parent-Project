@@ -1,0 +1,20 @@
+{
+    "name": "kreait/slim-docker",
+    "description": "Starter for a dockerized Slim Framework application",
+    "keywords": ["framework", "slim", "docker"],
+    "homepage": "https://github.com/kreait/slim-php-docker-starter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibrahim elsawaf",
+            "email": "hema3rafa@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-root-package-install": [
+            "composer create-project slim/slim-skeleton web",
+            "mv README.dist.md README.md",
+            "rm .gitignore .editorconfig composer.json LICENSE"
+        ]
+    }
+}
