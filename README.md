@@ -31,9 +31,10 @@ $ docker-compose up
 - Filter By All : http://localhost:8080/api/v1/users?balanceMin=300&balanceMax=580.8&currency=AED&statusCode=decline&provider=DataProviderY
 
 ## For Run the unittesting from 
-cd Parent-project/web
-run composer test
-
+```bash
+$ cd Parent-project/web
+$ run composer test
+```
 ## For any Questions call me on 201006989455 or send me on hema3rafa@gmail.com
 
 
