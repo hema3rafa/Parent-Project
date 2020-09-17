@@ -20,7 +20,7 @@ $ cd Parent-project/web
 $ docker-compose up
 ```
 
-## For test form browser 
+## For test from  browser 
 
 - Get all users : http://localhost:8080/api/v1/users
 - Filter by currncy  : http://localhost:8080/api/v1/users?currency=AED
