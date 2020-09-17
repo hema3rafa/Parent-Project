@@ -34,7 +34,7 @@ $ docker-compose up
 cd Parent-project/web
 run composer test
 
-## For any Questions caLL me on 201006989455 or send me on hema3rafa@gmail.com
+## For any Questions call me on 201006989455 or send me on hema3rafa@gmail.com
 
 
 
