@@ -1,6 +1,5 @@
 # Slim Framework Skeleton for Docker
 
-A dockerized [Slim Framework skeleton](https://github.com/slimphp/Slim-Skeleton) application as
 a starting point for new [Slim Framework](http://www.slimframework.com) projects.
 
 ## Requirements
@@ -11,43 +10,31 @@ a starting point for new [Slim Framework](http://www.slimframework.com) projects
 
 ## Installation
 
-Create a new project from this starter with
-
-```bash
-$ composer create-project kreait/slim-docker target-directory
-```
-
-The actual Slim Framework application will be located in `target-directory/web`.
+The actual Slim Framework application will be located in `Parent-project/web`.
+my code will be located in `Parent-project/web/src`.
 
 Then, start up the dockerized application:
 
 ```bash
-$ cd target-directory
+$ cd Parent-project/web
 $ docker-compose up
 ```
 
-## Images and Containers
+## For test form browser 
 
-The images for the application containers are built from the Dockerfiles in
-the `docker` directory so that you can modify them as needed for your
-application.
+- Get all users : http://localhost:8080/api/v1/users
+- Filter by currncy  : http://localhost:8080/api/v1/users?currency=AED
+- Filter by Balance : http://localhost:8080/api/v1/users?balanceMin=300&balanceMax=580.8
+- Filter by provider : http://localhost:8080/api/v1/users?provider=DataProviderX
+- Filter by userid : http://localhost:8080/api/v1/users?id=d3d29d70-1d25-11e3-8591-034165a3a613
+- Filter by statusCode  : http://localhost:8080/api/v1/users?statusCode=decline
+- Filter By All : http://localhost:8080/api/v1/users?balanceMin=300&balanceMax=580.8&currency=AED&statusCode=decline&provider=DataProviderY
 
-- The [backend image](docker/web/backend/Dockerfile) extends the official
-  [`php-fpm`](https://hub.docker.com/_/php/) image.
-- The [frontend image](docker/web/frontend/Dockerfile) extends the official
-  [`nginx`](https://hub.docker.com/_/nginx/) image.
+## For Run the unittesting from 
+cd Parent-project/web
+run composer test
 
-## Helpers
+## For any Questions caLL me on 201006989455 or send me on hema3rafa@gmail.com
 
-The starter includes a Makefile to simplify the basic tasks:
 
-- `make build` builds new Docker images with the current project files being copied
-  into the images.
-- `make up-dev` will add the settings from [`dev.yml`](dev.yml) to the
-  default configuration and start the application with the `web` directory being
-  mounted into the containers.
-- `make up-prod` will add the settings from [`prod.yml`](prod.yml) to the
-  default configuration and start the application
-- `make down` will stop the application
 
-Execute `make` or `make help` from the project root to show all available tasks.
