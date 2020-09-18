@@ -35,6 +35,12 @@ $ docker-compose up
 $ cd Parent-project/web
 $ run composer test
 ```
+
+## You can add ne provider in 3 steps
+- Add provider json file  under web/providersJsonFiles/
+- Create provider class under web/Infrastructure/ProvidersMapper/ , this class includes the provider configuration
+- Create new object from the provider and using it in  web/src/Infrastructure/Persistence/User/InMemoryUserRepository.php
+
 ## For any Questions call me on 201006989455 or send me on hema3rafa@gmail.com
 
 
